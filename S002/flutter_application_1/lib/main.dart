@@ -64,7 +64,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var selectedIndex = 0;
+  var selectedIndex = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +77,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 1:
         page = FavoritesPage();
+        break;
+      case 2:
+        page = StarPage();
         break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
@@ -137,6 +140,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       NavigationRailDestination(
                         icon: Icon(Icons.favorite),
                         label: Text('Favorites'),
+                      ),
+                      NavigationRailDestination(
+                        icon: Icon(Icons.star_rate),
+                        label: Text('Star'),
                       ),
                     ],
                     selectedIndex: selectedIndex,
@@ -358,6 +365,25 @@ class _HistoryListViewState extends State<HistoryListView> {
           );
         },
       ),
+    );
+  }
+}
+
+class StarPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context){
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text("buttons"),
+          ),
+          BackButton(),
+          
+        ]
+        ),
     );
   }
 }
