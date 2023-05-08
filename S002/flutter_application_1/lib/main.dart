@@ -376,9 +376,12 @@ class StarPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("buttons"),
+            child: Text(
+              "buttons",
+              ),
           ),
           BackButton(),
           
