@@ -64,7 +64,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var selectedIndex = 2;
+  var selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -372,6 +372,9 @@ class _HistoryListViewState extends State<HistoryListView> {
 class StarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context){
+    var theme = Theme.of(context);
+    var appState = context.watch<MyAppState>();
+
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -385,7 +388,21 @@ class StarPage extends StatelessWidget {
           ),
           BackButton(),
           
-        ]
+          for (var pair in appState.favorites)
+            ListTile(
+              leading: IconButton(
+                icon: Icon(Icons.delete_outline, semanticLabel: 'Delete'),
+                color: theme.colorScheme.primary,
+                onPressed: () {
+                  appState.removeFavorite(pair);
+                },
+              ),
+              title: Text(
+                pair.asLowerCase,
+                semanticsLabel: pair.asPascalCase,
+              ),
+            ),
+          ]
         ),
     );
   }
