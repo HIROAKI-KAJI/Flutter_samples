@@ -4,8 +4,6 @@ import 'package:copy_nintendo_app/messages.dart';
 import 'package:copy_nintendo_app/mycolor.dart';
 import 'package:copy_nintendo_app/text_style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class CheckinHistoryitem extends StatelessWidget {
   const CheckinHistoryitem({
@@ -14,6 +12,7 @@ class CheckinHistoryitem extends StatelessWidget {
     });
 
   final String eventTitle;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,7 +22,7 @@ class CheckinHistoryitem extends StatelessWidget {
 
         const Text(
           Messages.checkedIn,
-          style: MyTextStyles.m,
+          style: MyTextStyles.mBold,
         ),
         Gap.h14,
         Expanded(child: Row(children: [

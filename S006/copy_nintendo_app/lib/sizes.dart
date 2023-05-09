@@ -2,6 +2,7 @@ class Sizes{
   static const zero = 0.0;
 
   static const p1 = 1.0;
+  static const p1point5 = 1.5;
   static const p5  =  5.0;
   static const p10 = 10.0;
   static const p12 = 12.0;

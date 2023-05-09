@@ -36,19 +36,19 @@ class UserHistorySection extends StatelessWidget {
                 SizedBox(
                     height:Sizes.p30,
                     child: Row(
-                      
                       children: [
-                      const Text(
-                        Messages.recentHistory,
-                        style: MyTextStyles.m,
-                      ),
-                      const Spacer(),
-                      Icon(
-                        Icons.info_outline,
-                        size: Sizes.p20,
-                        color: Mycolor.darkGrey,
-                      )
-                    ]),
+                        const Text(
+                          Messages.recentHistory,
+                          style: MyTextStyles.m,
+                        ),
+                        const Spacer(),
+                        Icon(
+                          Icons.info_outline,
+                          size: Sizes.p20,
+                          color: Mycolor.darkGrey,
+                        )
+                      ],
+                    ),
                   ),
                   Gap.h5,
                   const Text(
@@ -57,7 +57,7 @@ class UserHistorySection extends StatelessWidget {
                   ),
                   Gap.h10,
                   SizedBox(
-                    height: Sizes.p20,
+                    height: Sizes.p80,
                     child: PlayHistoryItem(
                       gameTitle: exampleGameTitle,
                       value: examplePlayHistory,

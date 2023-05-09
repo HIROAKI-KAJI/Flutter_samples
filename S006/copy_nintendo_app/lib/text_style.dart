@@ -32,6 +32,12 @@ class MyTextStyles{
     fontSize: 24,
     fontWeight:FontWeight.bold
   );
+  //M size Bold
+  static const mBold = TextStyle(
+    color: Mycolor.black,
+    fontSize: 16,
+    fontWeight:FontWeight.bold
+  );
 
   static const sGrey = TextStyle(
     color: Mycolor.grey,

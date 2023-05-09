@@ -1,6 +1,8 @@
+import 'package:copy_nintendo_app/checkin_history_section.dart';
 import 'package:copy_nintendo_app/fixtures.dart';
 import 'package:copy_nintendo_app/gap.dart';
 import 'package:copy_nintendo_app/mycolor.dart';
+import 'package:copy_nintendo_app/play_history_section.dart';
 import 'package:copy_nintendo_app/point_section.dart';
 import 'package:copy_nintendo_app/sizes.dart';
 import 'package:copy_nintendo_app/user_history_section.dart';
@@ -32,9 +34,10 @@ class MyPageBody extends StatelessWidget {
         ),
         Gap.h14,
         //Play history section
-        
+        PlayHistorySection(),
         Gap.h14,
         //Check in History seciton
+        CheckinHistorySection(),
         ],
       ),
     );
