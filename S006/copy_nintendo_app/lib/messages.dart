@@ -8,4 +8,7 @@ class Messages{
   static const myPage   = 'Myページ';
   static const points     = 'ポイント';
   static const seeMore    = 'もっと見る';
+  
+  static const today = '今日';
+  
 }

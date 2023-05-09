@@ -32,4 +32,10 @@ class MyTextStyles{
     fontSize: 24,
     fontWeight:FontWeight.bold
   );
+
+  static const sGrey = TextStyle(
+    color: Mycolor.grey,
+    fontSize: 12,
+    fontWeight:FontWeight.normal
+  );
 }

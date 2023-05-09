@@ -1,3 +1,4 @@
+import 'package:copy_nintendo_app/my_page_body.dart';
 import 'package:copy_nintendo_app/my_page_header.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,8 @@ class MyPage extends StatelessWidget {
             onPressedQrButton: (){
               debugPrint('QRCodeButton');
             },
-            )
+            ),
+            const MyPageBody(),
         ],
       )
     );
