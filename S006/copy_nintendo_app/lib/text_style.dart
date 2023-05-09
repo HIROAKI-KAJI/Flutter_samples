@@ -1,8 +1,6 @@
 import 'package:copy_nintendo_app/mycolor.dart';
 import 'package:flutter/material.dart';
 
-
-
 class MyTextStyles{
   //XL size
   static const xl = TextStyle(
