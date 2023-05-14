@@ -1,4 +1,6 @@
+import 'package:bapp/utils/my_theme.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: MyTheme.light,
       home: Scaffold(
         body: Container(
           alignment: Alignment.center,
