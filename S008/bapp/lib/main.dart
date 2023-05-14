@@ -14,14 +14,15 @@ class MainApp extends StatelessWidget {
         body: Container(
           alignment: Alignment.center,
           child: Column(
-            children: [
+            children: const [
               Text(
-                "test"
+                "test text"
               )
             ],
           ),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
