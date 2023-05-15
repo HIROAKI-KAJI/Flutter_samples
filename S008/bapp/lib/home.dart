@@ -19,16 +19,16 @@ class Home extends ConsumerWidget {
 
     const items = [
       BottomNavigationBarItem(
-        icon: Icon(Icons.tv_outlined),
-        label: "tv",
+        icon: Icon(Icons.person),
+        label: "MyData",
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.shopping_basket_outlined),
-        label: "tv",
+        icon: Icon(Icons.analytics_outlined),
+        label: "Annals",
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.person_outline_rounded),
-        label: "tv",
+        icon: Icon(Icons.workspace_premium_rounded),
+        label: "Competition",
       ),
     ];
 
