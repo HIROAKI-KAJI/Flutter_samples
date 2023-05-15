@@ -1,31 +1,17 @@
+import 'package:bapp/home.dart';
 import 'package:bapp/utils/my_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
 void main() {
-  runApp(const MainApp());
+  const home = Home();
+  const app = MaterialApp(
+    home : home,
+    debugShowCheckedModeBanner: false,
+  );
+  const scopedApp = ProviderScope(child: app);
+  runApp(scopedApp);
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: MyTheme.light,
-      home: Scaffold(
-        body: Container(
-          alignment: Alignment.center,
-          child: Column(
-            children: const [
-              Text(
-                "test text"
-              )
-            ],
-          ),
-        ),
-      ),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
