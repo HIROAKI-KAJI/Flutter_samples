@@ -3,5 +3,4 @@ enum Images{
 
   const Images(this.path);
   final String path;
-
 }
